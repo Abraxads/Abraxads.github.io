@@ -6,3 +6,22 @@ H1, h2, h3 {
     font-family: "Cinzel"
 }
 
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+header{
+    height: 100vh;
+    background-image: 
+    linear-gradient(to top, rgba(119, 37, 37, 0.596) 0%, rgba(9, 13, 14, 0.808) 100%), 
+    url(../Recursos/Lugar.jpg);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
