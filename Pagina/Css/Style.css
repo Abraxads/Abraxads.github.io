@@ -1,5 +1,6 @@
 a {
     text-decoration: none;
+   
 }
 
 H1, h2, h3 {
@@ -11,9 +12,9 @@ H1, h2, h3 {
     box-sizing: border-box;
 }
 
-/*body{
+body{
     font-family: 'Open Sans', 'sans-serif';
-}*/
+}
 
 :root{
     scroll-behavior: smooth;
@@ -30,7 +31,7 @@ H1, h2, h3 {
 header{
     height: 60vh;
     background-image: 
-    linear-gradient(to top, rgba(119, 37, 37, 0.596) 0%, rgba(9, 13, 14, 0.808) 100%);
+    linear-gradient(to top, #77252598 0%, rgba(9, 13, 14, 0.808) 100%);
    /* url(../Recursos/Lugar.jpg);*/
     
     background-repeat: no-repeat;
@@ -61,3 +62,61 @@ header{
     box-shadow: 0 0 6px rgba(0, 0, 0, 1);
 }
 
+.menu-navegacion{
+    position: fixed;
+    top: 0;
+    right: 0; 
+    width: 30vw;
+    height: 100%;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform .3s ease-in-out;
+    transform: translate(110%);
+    box-shadow: 0 0 6px rgba (0 0 0 .5);
+}
+
+/*header:hover .menú-navegacion{
+    transform: translate(110%);
+}*/
+
+.spread{
+    transform: translate(0);
+}
+
+.menu-navegacion a{
+    color: #fff;
+}
+
+.Titulo{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.copy{
+    font-weight: 300;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*INFORMACIÓN*/
+
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color: #000;
+    font-size: 40px;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+.lupa{
+    height: 35%;
+    width: 40%;
+}
+
+
+footer{
+    background-color: #09203f;
+}
