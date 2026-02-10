@@ -5,6 +5,19 @@ a {
 H1, h2, h3 {
     font-family: "Cinzel"
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*body{
+    font-family: 'Open Sans', 'sans-serif';
+}*/
+
+:root{
+    scroll-behavior: smooth;
+}
 
 .contenedor{
     width: 90%;
@@ -15,13 +28,36 @@ H1, h2, h3 {
 }
 
 header{
-    height: 100vh;
+    height: 60vh;
     background-image: 
-    linear-gradient(to top, rgba(119, 37, 37, 0.596) 0%, rgba(9, 13, 14, 0.808) 100%), 
-    url(../Recursos/Lugar.jpg);
+    linear-gradient(to top, rgba(119, 37, 37, 0.596) 0%, rgba(9, 13, 14, 0.808) 100%);
+   /* url(../Recursos/Lugar.jpg);*/
     
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
+
+.head{
+    padding: 0%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #000000;
+}
+
+.menú{
+    position: fixed;
+    top: 20px;
+    right: 15px;
+    background-color: #ffff;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 1);
+}
+
