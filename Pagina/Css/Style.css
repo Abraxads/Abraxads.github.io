@@ -31,7 +31,7 @@ body{
 header{
     height: 90vh;
     background-image: 
-    linear-gradient(to top, #77252598 0%, rgba(9, 13, 14, 0.808) 100%), url(../Recursos/Lugar.jpg);
+    linear-gradient(to top, #77252598 0%, rgba(9, 13, 14, 0.808) 100%), url(../Recursos/Lugar_C.jpg);
     
     background-repeat: no-repeat;
     background-size: cover;
