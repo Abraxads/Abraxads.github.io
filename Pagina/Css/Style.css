@@ -31,8 +31,7 @@ body{
 header{
     height: 90vh;
     background-image: 
-    linear-gradient(to top, #77252598 0%, rgba(9, 13, 14, 0.808) 100%);
-   /* url(../Recursos/Lugar.jpg);*/
+    linear-gradient(to top, #77252598 0%, rgba(9, 13, 14, 0.808) 100%), url(../Recursos/Lugar.jpg);
     
     background-repeat: no-repeat;
     background-size: cover;
@@ -169,12 +168,18 @@ header{
 
 .contenedor-materias{
     display: flex;
+    gap: 20px;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-.img-materias{
+.contenedor-materias a{
     width: 30%;
+}
+
+.img-galeria{
+    width: 100%;
+    height: auto;
     display: block;
     margin-bottom: 15px;
     box-shadow: 0 0 6px rgba(0, 0, 0, alpha);
