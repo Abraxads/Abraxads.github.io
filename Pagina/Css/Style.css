@@ -186,7 +186,12 @@ header{
     box-shadow: 0 0 6px rgba(0, 0, 0, alpha);
 }
 
+#camp{
+    height: 84%;
+}
+
 
 footer{
+    height: 18vh;
     background-color: #09203f;
 }
