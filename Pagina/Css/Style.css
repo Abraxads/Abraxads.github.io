@@ -220,8 +220,15 @@ header{
     font-size: 16px;
     font-weight: 500;
     border-radius: 8px;
-    transition: all .25s ease;
+    transition: all 0.3s ease;
 }
+
+.btn:hover{
+        transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.651);
+}
+
+
 
 .investigacion-criminal{
     display: flex;
@@ -247,8 +254,15 @@ header{
     padding: 22px;
     background-color: #f5f7f8;
     border-radius: 12px;
-
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
+
+.informacion:hover{
+    transform: translateY(.8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.651);
+}
+
 .informacion p{
     font-size: 18px;
 }
