@@ -3,9 +3,12 @@ a {
    
 }
 
-H1, h2, h3 {
+H1, h2, h3{
     font-family: "Cinzel"
 }
+/*#rric{
+
+}*/
 *{
     margin: 0;
     padding: 0;
@@ -16,6 +19,9 @@ body{
     font-family: 'Open Sans', 'sans-serif';
 }
 
+main{
+    margin: 20px;
+}
 :root{
     scroll-behavior: smooth;
 }
@@ -29,7 +35,7 @@ body{
 }
 
 header{
-    height: 90vh;
+    height: 100vh;
     background-image: 
     linear-gradient(to top, #77252598 0%, rgba(9, 13, 14, 0.808) 100%), url(../Recursos/Lugar_C.jpg);
     
@@ -59,6 +65,7 @@ header{
     cursor: pointer;
     border-radius: 10px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 1);
+    z-index: 4;
 }
 
 .menu-navegacion{
@@ -101,10 +108,7 @@ header{
     font-family: 'Times New Roman', Times, serif;
 }
 
-.welcome{
-    text-align: center;
-    font-weight: 400;
-}
+
 
 /*INFORMACIÓN*/
 
@@ -117,30 +121,118 @@ header{
     margin-bottom: 20px;
 }
 
-.investigacion-criminal{
+.c-criminal{
+    position: relative;
     display: flex;
-    justify-content: space-evenly;
-    align-items:center;
+    align-items: center;
+    justify-content: space-between;
     gap: 40px;
-    margin-bottom: 20px;
-    /*flex-wrap: wrap ;*/
+
+    padding: 100px 80px 140px;
+    background: #DCE7E8;
+    overflow: hidden;
 }
 
-.c-info{
-    margin-top: 20px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.c-criminal::before{
+    content: "";
+    position: absolute;
+    right: -200px;
+    bottom: -120px;
+    width: 100%;
+    height: 90%;
+    background: #BCE2EB;
+    border-radius: 90% 70% 0% 80%;
+    z-index: 0;
+}
 
+.c-criminal::after{
+    content: "";
+    position: absolute;
+    left:-10%;
+    bottom: -120px;
+    width: 90%;
+    height: 250px;
+    background: rgba(69, 137, 154, 0.733);
+    border-radius: 90% 300% 80% 0%;
+    z-index: 1;
+}
+
+.texto{
+    width: 60%;
+    max-width: 520px;
+}
+
+.texto, .c-img{
+    position: relative;
+    z-index: 3;
+}
+
+.c-img{
+    width: 40%;
+    display: flex;
+    justify-content: center;
 }
 
 .lupa{
-    width: 40%;
+    /*flex: 1;*/
+    max-width: 100%;
+    height: auto;
+}
+
+.c-img img{
+    width: 420px;
+    position: relative;
+    top: 30px;
+}
+
+#rric{
+    text-align: left;
+    font-size: 2.6rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-weight: 500;
+    
+}
+
+.welcome{
+    font-size: 1.1rem;
+    line-height: 1.7;
+    max-width: 420px;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+.btn{
+    display: inline-block;
+    background: #236C82;
+    padding: 14px 26px;
+    color: #f2f2f2;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all .25s ease;
+}
+
+.investigacion-criminal{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    gap: 40px;
+    margin-bottom: 20px;
+    /*flex-wrap: wrap;*/
+}
+
+.c-info{
+    margin-top: 30px;
+    /*flex: 1;*/
+    display: flex;
+    gap: 30px;
+
 }
 
 .informacion{
-    height: 25%;
+    /*height: 25%;*/
+    flex: 1;
 }
 
 .n-investigacion{
@@ -192,6 +284,6 @@ header{
 
 
 footer{
-    height: 18vh;
+    height: 11%;
     background-color: #09203f;
 }
