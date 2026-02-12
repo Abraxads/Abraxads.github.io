@@ -194,6 +194,16 @@ header{
     
 }
 
+.here{
+    margin-top: 30px;
+    text-align: left;
+    font-size: 2.0rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-weight: 500;
+    
+}
+
 .welcome{
     font-size: 1.1rem;
     line-height: 1.7;
