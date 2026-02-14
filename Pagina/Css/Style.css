@@ -197,7 +197,7 @@ header{
 .here{
     margin-top: 30px;
     text-align: left;
-    font-size: 2.0rem;
+    font-size: 2.5rem;
     line-height: 1.2;
     margin-bottom: 20px;
     font-weight: 500;
@@ -362,6 +362,60 @@ header{
     font-weight: 700;
     font-size: 16px;
     line-height: 1.2;
+}
+
+.contenedor-de-recursos{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;  
+}
+
+.recurso-card{
+    background: #f1f5f9;
+    padding: 18px;
+    border-radius: 12px;
+    width: 220px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.8);
+    transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.recurso-card-h{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    background: #AACDD7;
+}
+.recurso-card-h h3{
+    font-weight: 600;
+    letter-spacing: .3px;
+    margin: 0;
+    font-size: 16px;
+}
+
+.recurso-card:hover{
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    background: #f8fafc;
+}
+.recursos-t{
+    display: block;
+    color: inherit;
+    margin-top: 6px;
+}
+
+.img-recursos{
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    object-fit: contain;
+    height: auto;
+    display: block;
+    opacity: .85;
 }
 
 footer{
